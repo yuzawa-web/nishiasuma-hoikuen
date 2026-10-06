@@ -893,3 +893,7 @@ td small{ color:var(--ink-soft); }
   .gn__recruit{ display:inline-flex; padding:7px 13px; font-size:.78rem; margin-left:0; }
   .gn__cta{ display:none !important; }
 }
+
+/* フッターの博滇会グループのマーク（2026-10-06） */
+.orgcard__logo{ padding:8px; }
+.orgcard__logo img{ width:100%; height:100%; object-fit:contain; display:block; }
