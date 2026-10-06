@@ -1,13 +1,13 @@
-﻿西遊馬保育園 6ページ版（2026-10-06）
+﻿西遊馬保育園 5ページ版（2026-10-06）
 
 index.html      HOME
 about.html      園の概要
 life.html       園での生活
 byojihoiku.html 病児保育
-recruit.html    採用情報
 blog.html       ブログ
 style.css       全ページ共通のデザイン
 logo-nishiasuma.png  園のロゴ
+robots.txt      お試しのあいだ検索に出さないための設定（本番では削除）
 
-すべて同じフォルダに置いたまま、index.html を開いてください。
-文字コードは UTF-8 です。
+採用情報は、上の帯の「採用情報」ボタンから法人の採用サイトへつながります。
+すべて同じフォルダに置いたまま、index.html を開いてください。文字コードは UTF-8 です。
