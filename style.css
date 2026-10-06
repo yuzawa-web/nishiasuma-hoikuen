@@ -885,3 +885,11 @@ td small{ color:var(--ink-soft); }
   .gn__a--recruit{ color:var(--deep); }
 }
 @media (max-width:560px){ .gn__recruit{ display:none; } }
+
+/* 採用情報は上の帯のボタン1つだけ（2026-10-06）。
+   スマホでは「見学のご相談」を画面下のバーにまかせ、上の帯には採用情報を出します */
+.gn__recruit{ text-decoration:none !important; }
+@media (max-width:560px){
+  .gn__recruit{ display:inline-flex; padding:7px 13px; font-size:.78rem; margin-left:0; }
+  .gn__cta{ display:none !important; }
+}
