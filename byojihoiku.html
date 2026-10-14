@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap&text=%E7%A7%81%E3%81%9F%E3%81%A1%E3%81%AF%E3%80%81%E3%82%82%E3%81%86%E3%81%B2%E3%81%A8%E3%81%A4%E3%81%AE%E3%81%8A%E3%81%86%E3%81%A1%E3%81%A7%E3%81%99%E3%80%82" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=202610141144">
 </head>
 <body>
 <!--
@@ -202,13 +202,15 @@
   if (!bar || !('IntersectionObserver' in window)) return;
   var fv = document.querySelector('.fv .actions');
   var cta = document.querySelector('.cta');
-  var s = { fv:false, cta:false };
+  var foot = document.querySelector('.footer');
+  var s = { fv:false, cta:false, foot:false };
   var io = new IntersectionObserver(function (es) {
-    es.forEach(function (e) { if (e.target === fv) s.fv = e.isIntersecting; else s.cta = e.isIntersecting; });
-    bar.classList.toggle('is-hidden', s.fv || s.cta);
+    es.forEach(function (e) { if (e.target === fv) s.fv = e.isIntersecting; else if (e.target === foot) s.foot = e.isIntersecting; else s.cta = e.isIntersecting; });
+    bar.classList.toggle('is-hidden', s.fv || s.cta || s.foot);
   }, { threshold: 0.2 });
   if (fv) io.observe(fv);
   if (cta) io.observe(cta);
+  if (foot) io.observe(foot);
 })();
 </script>
 <script>
