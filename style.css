@@ -736,9 +736,8 @@ td small{ color:var(--ink-soft); }
 }
 
 /* ---- HOME：各ページへの入口 ---- */
-.tiles{ display:grid; gap:22px; grid-template-columns:repeat(4, minmax(0,1fr)); }
-@media (max-width:900px){ .tiles{ grid-template-columns:repeat(2, minmax(0,1fr)); } }
-@media (max-width:480px){ .tiles{ grid-template-columns:minmax(0,1fr); } }
+.tiles{ display:grid; gap:22px; grid-template-columns:repeat(3, minmax(0,1fr)); }
+@media (max-width:720px){ .tiles{ grid-template-columns:minmax(0,1fr); } }
 .tile{
   position:relative; display:block; border-radius:28px; overflow:hidden; text-decoration:none; color:var(--ink);
   background:#fff; box-shadow:var(--shadow); border:3px solid var(--c3); transition:transform .2s ease;
